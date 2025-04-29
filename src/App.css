@@ -40,3 +40,14 @@
 .read-the-docs {
   color: #888;
 }
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.logo {
+  width: 40px;
+  margin: 0 15px;
+}

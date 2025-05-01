@@ -1,22 +1,21 @@
 export default function Testimonials() {
-    const reviews = [
-      { name: "Martina", text: "Me ayudaron a encontrar el depto perfecto en solo 3 días. ¡Gracias!" },
-      { name: "Santiago", text: "Muy profesional el equipo, resolvieron todas mis dudas." },
-      { name: "Lucía", text: "El proceso fue simple, rápido y sin estrés." },
-    ]
-  
-    return (
-      <section className="py-16 bg-white text-center">
-        <h2 className="text-3xl font-bold mb-6">Testimonios</h2>
-        <div className="flex flex-wrap justify-center gap-6">
-          {reviews.map((r, i) => (
-            <div key={i} className="bg-gray-50 p-6 rounded shadow w-72">
-              <p className="italic">“{r.text}”</p>
-              <p className="mt-4 font-semibold text-indigo-600">- {r.name}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-    )
-  }
-  
+  const testimonials = [
+    { name: 'Pri mi amor <3', text: 'Encontré el lugar perfecto en solo 3 días. Súper recomendado.' },
+    { name: 'Lucía', text: 'El equipo me ayudó en todo. Muy profesional.' },
+    { name: 'Santiago', text: 'El proceso fue rápido, seguro y digital.' },
+  ]
+
+  return (
+    <section className="py-20 bg-blue-50 text-center">
+      <h2 className="text-3xl font-bold text-indigo-700 mb-10">Lo que dicen nuestros clientes</h2>
+      <div className="flex flex-wrap justify-center gap-6">
+        {testimonials.map((t, i) => (
+          <div key={i} className="bg-white p-6 rounded-xl shadow-md w-72 text-gray-700">
+            <p className="italic mb-4">“{t.text}”</p>
+            <p className="font-semibold text-indigo-600">- {t.name}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}

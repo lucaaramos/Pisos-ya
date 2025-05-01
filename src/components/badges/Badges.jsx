@@ -1,22 +1,21 @@
 export default function Badges() {
-    const data = [
-      { label: 'Garantía de satisfacción', emoji: '✅' },
-      { label: 'Asesoramiento gratuito', emoji: '💬' },
-      { label: 'Proceso 100% digital', emoji: '📱' },
-      { label: 'Más de 500 propiedades', emoji: '🏠' },
-    ]
-  
-    return (
-      <section className="py-12 bg-white text-center">
-        <div className="flex flex-wrap justify-center gap-6">
-          {data.map((item, index) => (
-            <div key={index} className="bg-indigo-50 p-6 rounded-lg w-60 shadow-md">
-              <div className="text-3xl mb-2">{item.emoji}</div>
-              <p className="font-semibold text-indigo-700">{item.label}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-    )
-  }
-  
+  const data = [
+    { label: 'Satisfacción garantizada', emoji: '💯' },
+    { label: 'Asesoramiento experto', emoji: '🧑‍💼' },
+    { label: 'Gestión 100% online', emoji: '🌐' },
+    { label: '+500 propiedades', emoji: '🏡' },
+  ]
+
+  return (
+    <section className="py-16 bg-blue-50 text-center">
+      <div className="flex flex-wrap justify-center gap-6">
+        {data.map((item, i) => (
+          <div key={i} className="bg-white rounded-2xl shadow p-6 w-64 hover:scale-105 transform transition">
+            <div className="text-4xl mb-3">{item.emoji}</div>
+            <p className="text-indigo-700 font-medium">{item.label}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}

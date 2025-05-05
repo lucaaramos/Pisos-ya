@@ -6,14 +6,16 @@ import Badges from '../components/badges/Badges'
 import ContactForm from '../components/form/ContactForm'
 import Testimonials from '../components/testimonials/Testimonials'
 import InstagramFeed from '../components/instagramFeed/InstagramFeed'
+import Products from '../components/products/productos'
 
 export default function Home() {
   return (
     <div>
-      <TopBar />
+      {/* <TopBar /> */}
       <Navbar />
       <Hero />
       <About />
+      <Products />
       <Badges />
       <ContactForm />
       <Testimonials />

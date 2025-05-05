@@ -10,7 +10,7 @@ import InstagramFeed from '../components/instagramFeed/InstagramFeed'
 export default function Home() {
   return (
     <div>
-      <TopBar />
+      {/* <TopBar /> */}
       <Navbar />
       <Hero />
       <About />

@@ -1,6 +1,6 @@
 export default function Hero() {
     return (
-      <section className="relative h-screen bg-cover bg-center" style={{ backgroundImage: `url('/src/assets/img_blog_4.jpg')` }}>
+      <section className="relative h-screen bg-cover bg-center" style={{ backgroundImage: `url('/src/assets/hero.jpg')` }}>
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 flex items-center justify-center h-full">
           <div className="text-center text-white px-4 max-w-2xl animate-fade-in-down">

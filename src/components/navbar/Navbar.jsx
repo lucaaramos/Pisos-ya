@@ -20,7 +20,7 @@ export default function Navbar() {
       
       <div className="max-w-7xl mx-auto px-6 py-10 flex items-center justify-between relative">
         <div className={`text-2xl font-semibold tracking-wide ${scrolled ? 'text-indigo-600' : 'text-white'}`}>
-        <img src="/src/assets/logo.png" alt="Logo" className="h-20 w-auto" /> 
+        <img src="/src/assets/logo.png" alt="Logo" className="h-10 w-auto" /> 
         </div>
 
         {/* Enlaces centrados */}

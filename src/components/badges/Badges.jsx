@@ -8,26 +8,26 @@ export default function Badges() {
 
   return (
     <section
-      className="relative h-[80vh] bg-fixed bg-center bg-cover flex items-center justify-center"
+      className="relative min-h-[70vh] bg-fixed bg-center bg-cover flex items-center justify-center px-4"
       style={{ backgroundImage: "url('/src/assets/img_blog_4.jpg')" }}
     >
-      {/* Overlay para oscurecer la imagen y mejorar contraste */}
+      {/* Overlay para mejorar contraste */}
       <div className="absolute inset-0 bg-white/70 backdrop-blur-sm"></div>
 
-      {/* Contenido por encima de la imagen */}
-      <div className="relative z-10 text-center px-4">
-        <h2 className="text-4xl font-bold text-black mb-2">¿Por qué elegirnos?</h2>
-        <p className="text-gray-700 text-lg mb-8 max-w-xl mx-auto">
+      {/* Contenido */}
+      <div className="relative z-10 text-center w-full max-w-6xl">
+        <h2 className="text-3xl sm:text-4xl font-bold text-black mb-4">¿Por qué elegirnos?</h2>
+        <p className="text-gray-700 text-base sm:text-lg mb-10 max-w-2xl mx-auto px-2">
           Te acompañamos en cada paso para encontrar el piso ideal de forma rápida y segura.
         </p>
         <div className="flex flex-wrap justify-center gap-6">
           {data.map((item, i) => (
             <div
               key={i}
-              className="bg-white rounded-2xl shadow p-6 w-64 hover:scale-105 transform transition"
+              className="bg-white rounded-2xl shadow-md p-6 w-64 max-w-full hover:scale-105 transform transition"
             >
               <div className="text-4xl mb-3">{item.emoji}</div>
-              <p className="text-black font-medium">{item.label}</p>
+              <p className="text-black font-medium text-base">{item.label}</p>
             </div>
           ))}
         </div>
